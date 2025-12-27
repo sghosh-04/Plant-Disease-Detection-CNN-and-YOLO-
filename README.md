@@ -29,6 +29,7 @@ Model Training: CNN (38-class plant disease dataset)<br>
 <img width="512" height="600" alt="image" src="https://github.com/user-attachments/assets/70c1d75f-ab31-435e-8a3a-e75f0795abfa" />
 
 
+<br>
 📊 Model Details<br>
 1. YOLO Model<br>
     Detects leaf regions with high precision<br>
