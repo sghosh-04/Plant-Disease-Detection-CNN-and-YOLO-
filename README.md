@@ -26,20 +26,8 @@ Computer Vision: OpenCV<br>
 Data Processing: NumPy, PIL<br>
 Model Training: CNN (38-class plant disease dataset)<br>
 
-🏗️ System Architecture<br>
-Input Image / Webcam<br>
-        │<br>
-        ▼<br>
-YOLO Leaf Detection<br>
-        │<br>
-        ▼<br>
-Cropped Leaf Region<br>
-        │<br>
-        ▼<br>
-CNN Disease Classifier<br>
-        │<br>
-        ▼<br>
-Disease Prediction + Confidence<br>
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/70c1d75f-ab31-435e-8a3a-e75f0795abfa" />
+
 
 📊 Model Details<br>
 1. YOLO Model<br>
