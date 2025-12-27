@@ -25,6 +25,8 @@ Object Detection: YOLO (Ultralytics)<br>
 Computer Vision: OpenCV<br>
 Data Processing: NumPy, PIL<br>
 Model Training: CNN (38-class plant disease dataset)<br>
+<br>
+🏗️ System Architecture<br><br>
 
 <img width="512" height="600" alt="image" src="https://github.com/user-attachments/assets/70c1d75f-ab31-435e-8a3a-e75f0795abfa" />
 
