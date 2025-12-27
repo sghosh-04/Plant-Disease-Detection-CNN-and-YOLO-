@@ -26,7 +26,7 @@ Computer Vision: OpenCV<br>
 Data Processing: NumPy, PIL<br>
 Model Training: CNN (38-class plant disease dataset)<br>
 
-<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/70c1d75f-ab31-435e-8a3a-e75f0795abfa" />
+<img width="512" height="600" alt="image" src="https://github.com/user-attachments/assets/70c1d75f-ab31-435e-8a3a-e75f0795abfa" />
 
 
 📊 Model Details<br>
