@@ -1,63 +1,63 @@
 # Plant-Disease-Detection (based on CNN and YOLO)
 
-🌿 Plant Disease Detection System
-An AI-powered computer vision system that detects plant leaf diseases using deep learning models. This project combines YOLO-based leaf detection and a CNN-based disease classifier to accurately identify diseases from images or live camera feeds.
+🌿 Plant Disease Detection System <br>
+An AI-powered computer vision system that detects plant leaf diseases using deep learning models. This project combines YOLO-based leaf detection and a CNN-based disease classifier to accurately identify diseases from images or live camera feeds.<br>
 
-📌 Overview
-Plant diseases significantly impact agricultural productivity. Early and accurate detection is essential for timely intervention. This system automates the detection process by:
-Identifying plant leaves using object detection
-Classifying detected leaves into healthy or diseased categories
-Supporting real time detection via webcam or image input
-The system is designed to be modular, scalable, and deployable for real world agricultural applications.
+📌 Overview <br>
+Plant diseases significantly impact agricultural productivity. Early and accurate detection is essential for timely intervention. This system automates the detection process by:<br>
+Identifying plant leaves using object detection<br>
+Classifying detected leaves into healthy or diseased categories<br>
+Supporting real time detection via webcam or image input<br>
+The system is designed to be modular, scalable, and deployable for real world agricultural applications.<br>
 
-🚀 Features
-🌱 Automatic leaf detection using YOLO
-🧠 Disease classification using Convolutional Neural Networks (CNN)
-📷 Supports image input and live webcam detection
-⚡ High accuracy with optimized preprocessing
-🧩 Modular pipeline (easy to upgrade models)
-🛠️ Can be integrated with drones or IoT systems
+🚀 Features<br>
+🌱 Automatic leaf detection using YOLO<br>
+🧠 Disease classification using Convolutional Neural Networks (CNN)<br>
+📷 Supports image input and live webcam detection<br>
+⚡ High accuracy with optimized preprocessing<br>
+🧩 Modular pipeline (easy to upgrade models)<br>
+🛠️ Can be integrated with drones or IoT systems<br>
 
-🧠 Tech Stack
-Programming Language: Python
-Deep Learning: PyTorch / TensorFlow
-Object Detection: YOLO (Ultralytics)
-Computer Vision: OpenCV
-Data Processing: NumPy, PIL
-Model Training: CNN (38-class plant disease dataset)
+🧠 Tech Stack<br>
+Programming Language: Python<br>
+Deep Learning: PyTorch / TensorFlow<br>
+Object Detection: YOLO (Ultralytics)<br>
+Computer Vision: OpenCV<br>
+Data Processing: NumPy, PIL<br>
+Model Training: CNN (38-class plant disease dataset)<br>
 
-🏗️ System Architecture
-Input Image / Webcam
-        │
-        ▼
-YOLO Leaf Detection
-        │
-        ▼
-Cropped Leaf Region
-        │
-        ▼
-CNN Disease Classifier
-        │
-        ▼
-Disease Prediction + Confidence
+🏗️ System Architecture<br>
+Input Image / Webcam<br>
+        │<br>
+        ▼<br>
+YOLO Leaf Detection<br>
+        │<br>
+        ▼<br>
+Cropped Leaf Region<br>
+        │<br>
+        ▼<br>
+CNN Disease Classifier<br>
+        │<br>
+        ▼<br>
+Disease Prediction + Confidence<br>
 
-📊 Model Details
-1. YOLO Model
-    Detects leaf regions with high precision
-    Filters background noise
-2. CNN Model
-    Trained on 38 plant disease classes
-    Includes healthy and diseased leaf categories
-    Achieved ~96% validation accuracy
+📊 Model Details<br>
+1. YOLO Model<br>
+    Detects leaf regions with high precision<br>
+    Filters background noise<br>
+2. CNN Model<br>
+    Trained on 38 plant disease classes<br>
+    Includes healthy and diseased leaf categories<br>
+    Achieved ~96% validation accuracy<br>
 
-🌍 Applications
-Smart agriculture systems
-Drone-based crop monitoring
-Precision farming
-Early disease diagnosis
-Research and educational use
+🌍 Applications<br>
+Smart agriculture systems<br>
+Drone-based crop monitoring<br>
+Precision farming<br>
+Early disease diagnosis<br>
+Research and educational use<br>
 
-⭐ Acknowledgements
-PlantVillage Dataset
-Ultralytics YOLO
-Open source deep learning community
+⭐ Acknowledgements<br>
+PlantVillage Dataset<br>
+Ultralytics YOLO<br>
+Open source deep learning community<br>
