@@ -30,6 +30,7 @@ Model Training: CNN (38-class plant disease dataset)<br>
 
 
 <br>
+<br>
 📊 Model Details<br>
 1. YOLO Model<br>
     Detects leaf regions with high precision<br>
@@ -46,6 +47,7 @@ Drone-based crop monitoring<br>
 Precision farming<br>
 Early disease diagnosis<br>
 Research and educational use<br>
+<br>
 
 ⭐ Acknowledgements<br>
 PlantVillage Dataset<br>
