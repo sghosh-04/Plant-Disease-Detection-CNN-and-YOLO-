@@ -38,7 +38,8 @@ Model Training: CNN (38-class plant disease dataset)<br>
     Trained on 38 plant disease classes<br>
     Includes healthy and diseased leaf categories<br>
     Achieved ~96% validation accuracy<br>
-
+    
+<br>
 🌍 Applications<br>
 Smart agriculture systems<br>
 Drone-based crop monitoring<br>
