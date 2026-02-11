@@ -1,21 +1,22 @@
 # 🌿 Plant Disease Detection System  
-**CNN + YOLO | Python | Computer Vision**
+**Binary CNN Classifier + YOLOv8n Detector | Python | PyTorch | Computer Vision**
 
-An end-to-end computer vision pipeline designed to detect and classify plant diseases under real-world image variability.  
-The system combines **YOLO-based leaf localization** with **CNN-based disease classification** to improve robustness and reduce background noise.
+An end-to-end computer vision system designed to detect plant diseases under real-world variability.  
+The pipeline combines a **lightweight CNN-based binary classifier (Healthy vs Diseased)** with a **YOLOv8n-based detection model**.
 
 ---
 
 ## 🚀 Project Overview
 
-Plant disease classification models often perform well on curated datasets but degrade in uncontrolled environments.  
-This project explores **practical deployment challenges**, including:
+Traditional plant disease classifiers perform well on curated datasets but degrade in uncontrolled environments.  
+This project focuses on:
 
-- Domain shift (dataset vs live camera inputs)
-- Background noise
-- Image variability (lighting, resolution, angles)
+- Robust classification under domain shift
+- Efficiency for edge deployment
+- Drone-specific visual variability
+- Practical evaluation & failure analysis
 
----
+--
 
 ## 🧠 System Architecture
 
@@ -25,57 +26,77 @@ This project explores **practical deployment challenges**, including:
 <img width="512" height="600" alt="image" src="https://github.com/user-attachments/assets/70c1d75f-ab31-435e-8a3a-e75f0795abfa" />
 
 
-
-**Key Components:**
-
-✔ YOLO model for leaf region localization  
-✔ CNN classifier for disease prediction  
-✔ Preprocessing pipeline for inference stability  
-
 ---
 
 ## 🛠️ Technologies Used
 
 - **Language:** Python  
+- **Framework:** PyTorch  
+- **Detection Model:** YOLOv8n (Ultralytics)  
 - **Computer Vision:** OpenCV  
-- **Deep Learning:** CNN, YOLO  
-- **Libraries:** PyTorch / TensorFlow (update based on your implementation)  
-- **Tools:** NumPy, Pandas  
+- **Augmentation:** Albumentations, TorchVision  
+- **Evaluation:** Scikit-learn  
 
 ---
 
 ## 📂 Dataset
 
-Model trained and evaluated on:
+**Source:** Kaggle  
+**Dataset:** New Plant Diseases Dataset (PlantVillage)  
+**Original Classes:** 38  
+**Converted To:** Binary Classification  
 
-**Dataset:** PlantVillage *(or specify your dataset)*  
-**Classes:** XX plant disease categories  
-**Images:** ~XXXX samples  
-
-> ⚠ Performance differences observed between curated datasets and live camera inputs due to domain shift.
+**Final Classes:**
+- Healthy
+- Diseased
 
 ---
 
-## 📊 Model Performance
+## 🧠 CNN Model
 
-| Metric | Value |
-|--------|-------|
-| Validation Accuracy | XX% |
-| Test Accuracy | XX% |
-| Observations | Accuracy drop under live camera inputs |
+Custom lightweight CNN (**FastBinaryPlantDetector**) designed for:
 
-**Insights:**
+✔ Low computational overhead  
+✔ Faster inference  
+✔ Suitability for edge devices  
 
-- Identified misclassification clusters via confusion matrix analysis  
-- Observed domain shift effects impacting generalization  
-- Highlighted deployment risks in uncontrolled conditions  
+**Training Configuration:**
 
+- Loss Function: BCELoss  
+- Optimizer: AdamW  
+- Scheduler: ReduceLROnPlateau  
+- Epochs: 15  
+
+---
+
+## 📊 Evaluation Metrics
+
+Model performance evaluated using:
+
+✔ Accuracy  
+✔ Precision  
+✔ Recall  
+✔ F1-score  
+✔ Confusion Matrix  
+✔ ROC Curve & AUC  
+✔ Threshold Optimization  
+
+> Observed performance degradation under live camera inputs due to domain shift.
+
+---
+
+## 🚁 YOLOv8n Detector
+
+YOLO model trained for:
+
+✔ Disease spot localization  
+✔ Drone-specific augmentations  
+✔ Robust detection under rotation & scale variations  
 ---
 
 ## ⚙️ Installation
 
-Clone repository:
-
 ```bash
-git clone https://github.com/yourusername/Plant-Disease-Detection
-cd Plant-Disease-Detection
+git clone https://github.com/sghosh-04/Plant-Disease-Detection-CNN-and-YOLO-
+cd Plant-Disease-Detection-CNN-and-YOLO-
+pip install -r requirements.txt
