@@ -25,27 +25,57 @@ This project explores **practical deployment challenges**, including:
 <img width="512" height="600" alt="image" src="https://github.com/user-attachments/assets/70c1d75f-ab31-435e-8a3a-e75f0795abfa" />
 
 
-<br>
-<br>
-📊 Model Details<br>
-1. YOLO Model<br>
-    Detects leaf regions with high precision<br>
-    Filters background noise<br>
-2. CNN Model<br>
-    Trained on 38 plant disease classes<br>
-    Includes healthy and diseased leaf categories<br>
-    Achieved ~96% validation accuracy<br>
-    
-<br>
-🌍 Applications<br>
-Smart agriculture systems<br>
-Drone-based crop monitoring<br>
-Precision farming<br>
-Early disease diagnosis<br>
-Research and educational use<br>
-<br>
 
-⭐ Acknowledgements<br>
-PlantVillage Dataset<br>
-Ultralytics YOLO<br>
-Open source deep learning community<br>
+**Key Components:**
+
+✔ YOLO model for leaf region localization  
+✔ CNN classifier for disease prediction  
+✔ Preprocessing pipeline for inference stability  
+
+---
+
+## 🛠️ Technologies Used
+
+- **Language:** Python  
+- **Computer Vision:** OpenCV  
+- **Deep Learning:** CNN, YOLO  
+- **Libraries:** PyTorch / TensorFlow (update based on your implementation)  
+- **Tools:** NumPy, Pandas  
+
+---
+
+## 📂 Dataset
+
+Model trained and evaluated on:
+
+**Dataset:** PlantVillage *(or specify your dataset)*  
+**Classes:** XX plant disease categories  
+**Images:** ~XXXX samples  
+
+> ⚠ Performance differences observed between curated datasets and live camera inputs due to domain shift.
+
+---
+
+## 📊 Model Performance
+
+| Metric | Value |
+|--------|-------|
+| Validation Accuracy | XX% |
+| Test Accuracy | XX% |
+| Observations | Accuracy drop under live camera inputs |
+
+**Insights:**
+
+- Identified misclassification clusters via confusion matrix analysis  
+- Observed domain shift effects impacting generalization  
+- Highlighted deployment risks in uncontrolled conditions  
+
+---
+
+## ⚙️ Installation
+
+Clone repository:
+
+```bash
+git clone https://github.com/yourusername/Plant-Disease-Detection
+cd Plant-Disease-Detection
