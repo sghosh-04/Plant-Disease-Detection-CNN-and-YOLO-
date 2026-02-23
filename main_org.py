@@ -10,8 +10,8 @@ from model_loader import PlantDiseaseCNN
 
 warnings.filterwarnings("ignore")
 
-LEAF_MODEL_PATH = "best_leaf_only.pt"
-DISEASE_CNN_MODEL = "plant_cnn_model.pt"
+LEAF_MODEL_PATH = "model_leaf.pt    "
+DISEASE_CNN_MODEL = "model.tflite"
 
 CLASS_NAMES = [
     "Apple_Apple_scab","Apple_Black_rot","Apple_Cedar_apple_rust","Apple_healthy",
