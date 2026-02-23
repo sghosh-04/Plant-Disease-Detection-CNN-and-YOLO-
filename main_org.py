@@ -11,7 +11,7 @@ from model_loader import PlantDiseaseCNN
 warnings.filterwarnings("ignore")
 
 LEAF_MODEL_PATH = "best.pt    "
-DISEASE_CNN_MODEL = "model.tflite"
+DISEASE_CNN_MODEL = "org.pt"
 
 CLASS_NAMES = [
     "Apple_Apple_scab","Apple_Black_rot","Apple_Cedar_apple_rust","Apple_healthy",
@@ -205,4 +205,5 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+
 
